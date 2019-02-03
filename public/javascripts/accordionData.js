@@ -6,7 +6,7 @@ const accordionData = [
       "Love can be understood, in evolutionary terms, as part of the survival instinct. Strong emotional bonds between organisms increase their chances of surviving long enough to procreate, thereby facilitating the continuation of the species. It's easy to see how natural selection favours individuals who form such attachments."
   },
   {
-    heading: "Why does it always rain on me? - Travis",
+    heading: "Why does it always rain on me?",
     content:
       "It doesn't. While it's true that parts of Scotland are some of the wettest places in Europe, with annual rainfall up to 4,577 mm, it doesn't rain constantly. More to the point, precipitation is governed by geophysical laws, not human behaviour."
   },
