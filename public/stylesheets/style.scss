@@ -1,27 +1,31 @@
 /* variables */
 $dark-font: #333;
 $light-background: #f8f8f8;
+$acc-light-blue: #d9e5ee;
+$acc-border: #e4f3fd;
+$background-blue: #0892e7;
+
+/* mixins */
+@mixin button-reset() {
+  cursor: pointer;
+  text-align: left;
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  width: 100%;
+}
 
 /*body*/
 body {
   margin: 0;
-}
-/*Heading*/
-.heading {
-  overflow: hidden;
-  background: #036;
-  margin: 0px;
-  h3 {
-    text-align: center;
-    color: #f1f1f1;
-  }
+  background: $background-blue;
 }
 
 /*Parent container*/
 .container {
   max-width: 740px;
   margin: 25px auto;
-  font-family: "Helvetica", "Arial", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: $dark-font;
   padding: 0 15px;
 }
@@ -29,16 +33,11 @@ body {
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
   background-color: $light-background;
-  cursor: pointer;
   padding: 18px;
-  width: 100%;
-  text-align: left;
-  border-radius: 2px;
-  outline: none;
   transition: 0.4s;
-  border: 1px solid #ebebeb;
   font-size: 14px;
   margin-top: 15px;
+  @include button-reset();
   &:after {
     content: "\02795"; /* Unicode character for "plus" sign (+) */
     font-size: 11px;
@@ -50,8 +49,7 @@ body {
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
 .accordion:hover {
-  background-color: #649899;
-  color: #f1f1f1;
+  background-color: $acc-light-blue;
 }
 
 .active:after {
@@ -60,7 +58,7 @@ body {
 
 .panel {
   padding: 0 18px;
-  background-color: #f7f7f7;
+  background-color: $light-background;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;

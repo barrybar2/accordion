@@ -1,38 +1,31 @@
 /* variables */
+/* mixins */
 /*body*/
 body {
-  margin: 0; }
-
-/*Heading*/
-.heading {
-  overflow: hidden;
-  background: #036;
-  margin: 0px; }
-  .heading h3 {
-    text-align: center;
-    color: #f1f1f1; }
+  margin: 0;
+  background: #0892e7; }
 
 /*Parent container*/
 .container {
   max-width: 740px;
   margin: 25px auto;
-  font-family: "Helvetica", "Arial", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #333;
   padding: 0 15px; }
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
   background-color: #f8f8f8;
-  cursor: pointer;
   padding: 18px;
-  width: 100%;
+  transition: 0.4s;
+  font-size: 14px;
+  margin-top: 15px;
+  cursor: pointer;
   text-align: left;
   border-radius: 2px;
   outline: none;
-  transition: 0.4s;
-  border: 1px solid #ebebeb;
-  font-size: 14px;
-  margin-top: 15px; }
+  border: none;
+  width: 100%; }
   .accordion:after {
     content: "\02795";
     /* Unicode character for "plus" sign (+) */
@@ -43,8 +36,7 @@ body {
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
 .accordion:hover {
-  background-color: #649899;
-  color: #f1f1f1; }
+  background-color: #d9e5ee; }
 
 .active:after {
   content: "\2796";
@@ -52,7 +44,7 @@ body {
 
 .panel {
   padding: 0 18px;
-  background-color: #f7f7f7;
+  background-color: #f8f8f8;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out; }
